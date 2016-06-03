@@ -18,12 +18,15 @@
  * @package WordPress
  */
 
+// ** Heroku Postgres settings - from Heroku Environment ** //
+$db = parse_url(getenv("DATABASE_URL"));
+
 $wp_config = [
-	'db_name' => getenv('DB_NAME'),
-	'db_user' => getenv('DB_USER'),
-	'db_password' => getenv('DB_PASSWORD'),
-	'db_host' => getenv('DB_HOST'),
-	'db_ssl' => getenv('DB_SSL') === 'false' ? false : true,
+	'db_name' => trim($db["path"],"/"),
+	'db_user' => $db["user"],
+	'db_password' => $db["pass"],
+	'db_host' => $db["host"],
+	'db_ssl' => true,
 
 	'auth_key' => getenv('AUTH_KEY'),
 	'secure_auth_key' => getenv('SECURE_AUTH_KEY'),

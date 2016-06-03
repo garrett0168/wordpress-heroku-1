@@ -62,7 +62,7 @@
         }
     },
     "addons": [
-        "cleardb",
+        "heroku-postgresql:hobby-dev",
         "mailgun",
         "papertrail"
     ]
