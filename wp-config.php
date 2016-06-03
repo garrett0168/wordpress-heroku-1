@@ -47,7 +47,9 @@ if ( file_exists($wp_config['wp_config_local']) ) {
 }
 
 // ** Heroku Postgres settings - from Heroku Environment ** //
-$db = parse_url($_ENV["DATABASE_URL"]);
+$db = parse_url(getenv("DATABASE_URL"));
+error_log($db);
+
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
 define('DB_NAME', trim($db["path"],"/"));
