@@ -148,11 +148,11 @@
             "time": "2013-03-15 17:51:14"
         },
         {
-            "name": "wordpress/wordpress-ja",
+            "name": "wordpress/wordpress",
             "version": "4.4.2",
             "dist": {
                 "type": "zip",
-                "url": "https://ja.wordpress.org/wordpress-4.4.2-ja.zip",
+                "url": "https://wordpress.org/wordpress-4.5.2.zip",
                 "reference": null,
                 "shasum": null
             },
