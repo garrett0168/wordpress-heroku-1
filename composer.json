@@ -33,7 +33,7 @@
         "php": "~7.0.3",
         "ext-gd": "*",
         "ext-mbstring": "*",
-        "wordpress/wordpress-ja": "*",
+        "wordpress/wordpress": "*",
         "wpackagist-plugin/jetpack": "*",
         "wpackagist-plugin/mailgun": "*",
         "wpackagist-plugin/nephila-clavata": "*",
@@ -42,7 +42,7 @@
     },
     "extra": {
         "webroot-dir": "public",
-        "webroot-package": "wordpress/wordpress-ja",
+        "webroot-package": "wordpress/wordpress",
         "installer-paths": {
             "public/wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
             "public/wp-content/themes/{$name}/": ["type:wordpress-theme"]
